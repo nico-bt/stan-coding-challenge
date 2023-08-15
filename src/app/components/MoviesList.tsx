@@ -25,6 +25,14 @@ const MoviesList = ({ movies }: { movies: Item[] }) => {
     setActiveFilter("oldest")
   }
 
+  const handleClick = (item: Item) => {
+    if (item.programType === "series") {
+      router.push(`/series/${item.id}`)
+    } else {
+      router.push(`/movies/${item.id}`)
+    }
+  }
+
   return (
     <>
       <div className={styles.sort_btns}>
@@ -50,7 +58,7 @@ const MoviesList = ({ movies }: { movies: Item[] }) => {
               alt="poster img of movie"
               placeholder="blur"
               blurDataURL="/homerThinking.jpeg"
-              onClick={() => router.push(`/movies/${item.id}`)}
+              onClick={() => handleClick(item)}
             />
             <div className={styles.title_year}>
               <h2>{item.title}</h2>

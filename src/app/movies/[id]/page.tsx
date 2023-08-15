@@ -1,7 +1,7 @@
 import IndividualItem from "@/app/components/IndividualItem"
 
 const getMovieById = async (id: string): Promise<Item> => {
-  const data = await fetch("http://localhost:3000/api/items")
+  const data = await fetch("https://stan-coding-challenge-jopw5teho-nico-bt.vercel.app/api/items")
   const json = await data.json()
 
   const movie = json.filter((item: Item) => item.id === Number(id))
