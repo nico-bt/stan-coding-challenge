@@ -1,5 +1,5 @@
 import { NextResponse } from "next/server"
-import sampleData from "../../../feed/sample.json"
+import sampleData from "../../../../public/feed/sample.json"
 
 // Agrego id's a los items para hacer más fácil rutas dinámicas para acceder items individuales
 const dataWithIds: Item[] = sampleData.entries.map((item, index) => {
