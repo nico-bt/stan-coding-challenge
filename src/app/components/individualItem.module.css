@@ -1,0 +1,19 @@
+.article {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 1rem;
+}
+
+.description {
+  margin-top: 0.6rem;
+  line-height: 1.5;
+}
+
+@media (max-width: 550px) {
+  .article {
+    grid-template-columns: 1fr;
+  }
+  .article img {
+    justify-self: center;
+  }
+}

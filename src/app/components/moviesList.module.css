@@ -1,0 +1,65 @@
+.moviesContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 150px);
+  gap: 1rem;
+  justify-content: center;
+}
+
+.moviesContainer img {
+  height: 225px;
+  width: 100%;
+  object-fit: contain;
+  cursor: pointer;
+  transition: all ease 0.3s;
+}
+
+.moviesContainer img:hover {
+  transform: scale(1.05);
+  box-shadow: 2px 2px 8px whitesmoke;
+}
+
+.title_year {
+  text-align: center;
+  color: black;
+  font-size: 0.85rem;
+  font-weight: 300;
+}
+.title_year h2 {
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.sort_btns {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 1rem;
+  justify-content: center;
+  align-items: center;
+}
+.sort_btns h2 {
+  font-size: 1.25rem;
+  font-weight: 400;
+}
+
+@media (max-width: 400px) {
+  .sort_btns h2 {
+    width: 100%;
+  }
+}
+
+.sort_btns button {
+  width: 80px;
+  height: 30px;
+  font-size: 1rem;
+  letter-spacing: 2px;
+  border-radius: 6px;
+  border-style: none;
+  cursor: pointer;
+}
+
+.active {
+  background-color: black;
+  color: white;
+  font-weight: 600;
+}

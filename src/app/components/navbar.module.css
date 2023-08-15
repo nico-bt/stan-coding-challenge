@@ -1,0 +1,50 @@
+.navbar {
+  background: linear-gradient(#45a5ff, #0084ff);
+  margin-bottom: 0.25rem;
+  color: white;
+}
+
+.header {
+  max-width: 1000px;
+  margin-inline: auto;
+  padding: 0.6rem;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 6px;
+}
+.header h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  color: white;
+}
+.header ul {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  gap: 10px;
+  justify-content: flex-end;
+}
+
+.header li {
+  padding: 0.5rem;
+}
+
+.trial {
+  background: #333;
+}
+
+.title {
+  background: #1e1e1e;
+  box-shadow: 2px 2px 6px black;
+  padding: 0.25rem;
+}
+.title h2 {
+  max-width: 1000px;
+  margin-inline: auto;
+  padding: 0.6rem;
+  font-weight: 500;
+}

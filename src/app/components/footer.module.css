@@ -1,0 +1,56 @@
+.footer {
+  background-color: #1e1e1e;
+  color: whitesmoke;
+}
+
+.container {
+  width: 100%;
+  max-width: 1000px;
+  margin-inline: auto;
+  margin-top: 1rem;
+  padding: 1.5rem;
+  display: grid;
+  gap: 0.5rem;
+}
+
+.links {
+  display: flex;
+  flex-wrap: wrap;
+}
+.links a {
+  text-decoration: none;
+  color: whitesmoke;
+}
+.links a:not(:last-child)::after {
+  content: "|";
+  margin-inline: 8px;
+}
+
+.externalLinks {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 1rem 0;
+}
+
+.externalLinks ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.externalLinks li {
+  cursor: pointer;
+}
+
+@media (max-width: 620px) {
+  .externalLinks {
+    display: grid;
+    gap: 1rem;
+    justify-content: center;
+  }
+  .externalLinks ul {
+    justify-content: center;
+  }
+}
