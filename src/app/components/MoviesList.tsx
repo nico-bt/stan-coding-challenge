@@ -56,8 +56,6 @@ const MoviesList = ({ movies }: { movies: Item[] }) => {
               width={100}
               src={item.images["Poster Art"].url}
               alt="poster img of movie"
-              placeholder="blur"
-              blurDataURL="/homerThinking.jpeg"
               onClick={() => handleClick(item)}
             />
             <div className={styles.title_year}>

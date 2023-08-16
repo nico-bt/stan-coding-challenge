@@ -11,6 +11,10 @@
   object-fit: contain;
   cursor: pointer;
   transition: all ease 0.3s;
+  background-image: url("/homerThinking.jpeg");
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
 }
 
 .moviesContainer img:hover {

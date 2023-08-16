@@ -9,8 +9,6 @@ export default function IndividualItem({ item }: { item: Item }) {
         width={300}
         src={item.images["Poster Art"].url}
         alt="poster img of item"
-        placeholder="blur"
-        blurDataURL="/homerThinking.jpeg"
       />
       <div>
         <h2>{item.title}</h2>
